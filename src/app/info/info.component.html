@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Samuel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Je</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Náš</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Šašek</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">Uživatelé</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/info">InfoUsers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/base" (click)="runLogOut()">Log-out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">  
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{id}}</td>
+          <td>{{username}}</td>
+          <td>{{email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
